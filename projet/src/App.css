@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@theme {
+  --color-primary: #1e1c27;
+  --color-secondary: #5ce1e6;
+  --color-tertiary: #4a5e69;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    width: 80rem;
+    margin: 0 auto;
+    background-color: #4a5e69;
+  }
+}
