@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 @theme {
   --color-primary: #1e1c27;
@@ -8,8 +8,8 @@
 }
 
 * {
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -19,4 +19,8 @@
     margin: 0 auto;
     background-color: #4a5e69;
   }
+}
+
+h1 {
+  font-size: large;
 }

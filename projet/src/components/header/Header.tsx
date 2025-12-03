@@ -28,17 +28,34 @@ function Header() {
         <li><a href="#Compétences" className="hover:underline">Compétences</a></li>
         <li><a href="#Projets" className="hover:underline">Projets</a></li>
         <li><a href="#Contact" className="hover:underline">Contact</a></li>
+        <li><a
+          href="/CV ARNAUD 2025.pdf"
+          download
+          className="px-4 py-2 bg-secondary text-white rounded hover:bg-secondary/80 transition"
+        >
+          Télécharger mon CV
+        </a>
+        </li>
 
       </ul>
       {/* Modale du menu */}
       <div className="flex items-center gap-4 md:hidden">
         {open && (
           <div className="md:hidden">
-            <ul className="text-secondary flex flex-col gap-1 py-3">
+            <ul className="text-secondary flex flex-col py-3">
               <li><a href="#Description" onClick={() => setOpen(false)}>Description</a></li>
               <li><a href="#Compétences" onClick={() => setOpen(false)}>Compétences</a></li>
               <li><a href="#Projets" onClick={() => setOpen(false)}>Projets</a></li>
               <li><a href="#Contact" onClick={() => setOpen(false)}>Contact</a></li>
+              <li><a
+                href="/CV ARNAUD 2025.pdf"
+                download
+                className="px-2 py-1 bg-secondary text-white rounded hover:bg-secondary/80 transition"
+              >
+                Télécharger mon CV
+              </a>
+
+              </li>
 
             </ul>
           </div>
@@ -55,6 +72,7 @@ function Header() {
         </button>
       </div>
     </section>
+
   );
 }
 

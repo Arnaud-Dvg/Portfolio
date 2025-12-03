@@ -11,6 +11,7 @@ function Description() {
       <p className="text-white md:hidden w-2/3 text-center mx-auto">
         Développeur web passionné, je crée des applications modernes en React et Node.js. Issu d’une reconversion, je privilégie la qualité du code, l’UX et les bonnes pratiques. Curieux et rigoureux, j’aime résoudre des problèmes et construire des projets utiles et performants.
       </p>
+      <hr className="mt-10 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent opacity-75" />
     </div>
   );
 }
