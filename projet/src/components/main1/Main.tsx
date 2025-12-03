@@ -1,7 +1,7 @@
-import Contact from "./contact";
-import Projet from "./projet";
-import Description from "./description";
-import Competences from "./competences";
+import Contact from "./Contact";
+import Projet from "./Projet";
+import Description from "./Description";
+import Competences from "./Competences";
 
 function Main() {
   return (
