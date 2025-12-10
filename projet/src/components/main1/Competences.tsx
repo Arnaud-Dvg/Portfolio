@@ -8,35 +8,35 @@ function Competences() {
         <article>
           <h2 className="text-tertiary text-center mb-4">Développement Front-End</h2>
 
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 [&_span]:w-32 [&_span]:text-white [&_img]:w-6 [&_img]:h-6">
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">HTML 5</span>
-              <img className="w-6 h-6" src="./assets/akar-icons--html-fill.png" alt="HTML5" />
+              <span>HTML 5</span>
+              <img src="./assets/akar-icons--html-fill.png" alt="HTML5" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">CSS 3</span>
-              <img className="w-6 h-6" src="./assets/akar-icons--css-fill.png" alt="CSS3" />
+              <span>CSS 3</span>
+              <img src="./assets/akar-icons--css-fill.png" alt="CSS3" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">JavaScript</span>
-              <img className="w-6 h-6" src="./assets/ri--javascript-fill.png" alt="JavaScript" />
+              <span>JavaScript</span>
+              <img src="./assets/ri--javascript-fill.png" alt="JavaScript" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">REACT</span>
-              <img className="w-6 h-6" src="./assets/akar-icons--react-fill.png" alt="REACT" />
+              <span>REACT</span>
+              <img src="./assets/akar-icons--react-fill.png" alt="REACT" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">TypeScript</span>
-              <img className="w-6 h-6" src="./assets/akar-icons--typescript-fill.png" alt="TypeScript" />
+              <span>TypeScript</span>
+              <img src="./assets/akar-icons--typescript-fill.png" alt="TypeScript" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">Tailwind</span>
-              <img className="w-6 h-6" src="./assets/mdi--tailwind.png" alt="Tailwind" />
+              <span>Tailwind</span>
+              <img src="./assets/mdi--tailwind.png" alt="Tailwind" />
             </div>
           </div>
         </article>
@@ -46,26 +46,26 @@ function Competences() {
         <article>
           <h2 className="text-tertiary text-center mb-4 mt-10">Développement Back-End</h2>
 
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 [&_span]:w-32 [&_span]:text-white [&_img]:w-6 [&_img]:h-6">
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">Express</span>
-              <img className="w-6 h-6" src="./assets/simple-icons--express.png" alt="Express" />
+              <span>Express</span>
+              <img src="./assets/simple-icons--express.png" alt="Express" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">Node</span>
-              <img className="w-6 h-6" src="./assets/fa7-brands--node.png" alt="Node" />
+              <span>Node</span>
+              <img src="./assets/fa7-brands--node.png" alt="Node" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">SQL</span>
-              <img className="w-6 h-6" src="./assets/carbon--sql.png" alt="SQL" />
+              <span>SQL</span>
+              <img src="./assets/carbon--sql.png" alt="SQL" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">MySQL</span>
-              <img className="w-6 h-6" src="./assets/cib--mysql.png" alt="MySQL" />
+              <span>MySQL</span>
+              <img src="./assets/cib--mysql.png" alt="MySQL" />
             </div>
 
           </div>
@@ -75,36 +75,36 @@ function Competences() {
         <article>
           <h2 className="text-tertiary text-center mb-4 mt-10">Outils</h2>
 
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 [&_span]:w-32 [&_span]:text-white [&_img]:w-6 [&_img]:h-6">
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">Git</span>
-              <img className="w-6 h-6" src="./assets/pajamas--git.png" alt="Git" />
+              <span>Git</span>
+              <img src="./assets/pajamas--git.png" alt="Git" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">GitHub</span>
-              <img className="w-6 h-6" src="./assets/iconoir--github.png" alt="GitHub" />
+              <span>GitHub</span>
+              <img src="./assets/iconoir--github.png" alt="GitHub" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">VSCode</span>
-              <img className="w-6 h-6" src="./assets/picon--vscode.png" alt="VSCode" />
+              <span>VSCode</span>
+              <img src="./assets/picon--vscode.png" alt="VSCode" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">Figma</span>
-              <img className="w-6 h-6" src="./assets/solar--figma-linear.png" alt="Figma" />
+              <span>Figma</span>
+              <img src="./assets/solar--figma-linear.png" alt="Figma" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">Trello</span>
-              <img className="w-6 h-6" src="./assets/mdi--trello.png" alt="Trello" />
+              <span>Trello</span>
+              <img src="./assets/mdi--trello.png" alt="Trello" />
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="w-32 text-white">LinkedIn</span>
-              <img className="w-6 h-6" src="./assets/uil--linkedin.png" alt="LinkedIn" />
+              <span>LinkedIn</span>
+              <img src="./assets/uil--linkedin.png" alt="LinkedIn" />
             </div>
 
           </div>
