@@ -24,3 +24,8 @@
 h1 {
   font-size: large;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+ 

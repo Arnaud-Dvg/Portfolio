@@ -11,23 +11,23 @@ function Header() {
     <section
       className="flex items-center bg-primary justify-between"
     >
-      <div>
+      <div className="flex items-center gap-2">
         <img
           src="./assets/logo_cropped.png"
-          alt="AD"
-          className=" h-[150px] w-auto flex"
+          alt="Logo AD"
+          className=" h-[125px] w-auto"
         />
-      </div>
-      <div className="hidden lg:block">
-        <p className="text-white">Arnaud Devoge</p>
-        <p className="text-secondary text-2xl">Développeur Web</p>
+        <div className="hidden lg:block">
+          <p className="text-white">Arnaud Devoge</p>
+          <p className="text-secondary text-2xl">Développeur Web</p>
+        </div>
       </div>
       {/* Lien en desktop */}
       <ul className="text-secondary hidden gap-6 md:flex pr-5">
-        <li><a href="#Description" className="hover:underline">Description</a></li>
-        <li><a href="#Compétences" className="hover:underline">Compétences</a></li>
-        <li><a href="#Projets" className="hover:underline">Projets</a></li>
-        <li><a href="#Contact" className="hover:underline">Contact</a></li>
+        <li><a href="#description" className="hover:underline">Description</a></li>
+        <li><a href="#compétences" className="hover:underline">Compétences</a></li>
+        <li><a href="#projets" className="hover:underline">Projets</a></li>
+        <li><a href="#contact" className="hover:underline">Contact</a></li>
         <li><a
           href="/CV ARNAUD 2025.pdf"
           download
@@ -43,10 +43,10 @@ function Header() {
         {open && (
           <div className="md:hidden">
             <ul className="text-secondary flex flex-col py-3">
-              <li><a href="#Description" onClick={() => setOpen(false)}>Description</a></li>
-              <li><a href="#Compétences" onClick={() => setOpen(false)}>Compétences</a></li>
-              <li><a href="#Projets" onClick={() => setOpen(false)}>Projets</a></li>
-              <li><a href="#Contact" onClick={() => setOpen(false)}>Contact</a></li>
+              <li><a href="#description" onClick={() => setOpen(false)}>Description</a></li>
+              <li><a href="#compétences" onClick={() => setOpen(false)}>Compétences</a></li>
+              <li><a href="#projets" onClick={() => setOpen(false)}>Projets</a></li>
+              <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
               <li><a
                 href="/CV ARNAUD 2025.pdf"
                 download

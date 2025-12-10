@@ -1,9 +1,10 @@
 function Description() {
   return (
-    <div>
-      <h1 className="text-secondary text-center pb-10">Développeur Web Moderne
+    <div id="description">
+      <h1 className="text-secondary text-center pb-5">Développeur Web Moderne
       </h1>
-      <p className="text-white text-center hidden md:flex w-2/3 mx-auto mb-4">Développeur web passionné, je me suis réorienté après plusieurs années dans la logistique et la régulation du transport. Aujourd’hui, je conçois et développe des applications web modernes, alliant performance, UX soignée et bonnes pratiques.</p>
+      <img src="./assets/moi.png" alt="Photo de Arnaud Devoge" className="rounded-full h-[100px] mx-auto shadow-[0_0_10px_1px] shadow-[#5ce1e6]" />
+      <p className="text-white text-center hidden md:flex w-2/3 mx-auto mb-4 pt-5">Développeur web passionné, je me suis réorienté après plusieurs années dans la logistique et la régulation du transport. Aujourd’hui, je conçois et développe des applications web modernes, alliant performance, UX soignée et bonnes pratiques.</p>
       <p className="text-white text-center hidden md:flex w-2/3 mx-auto mb-4">
         Formé au titre DWWM à la Wild Code School, j’ai travaillé sur plusieurs projets complets en React, Node.js, Express et MySQL, avec une approche centrée sur la qualité du code, l’organisation Agile et l’expérience utilisateur. J’aime créer des interfaces fluides, des backends structurés et des fonctionnalités robustes.</p>
       <p className="text-white text-center hidden md:flex w-2/3 mx-auto">

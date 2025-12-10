@@ -33,7 +33,7 @@ function Projet() {
   };
 
   return (
-    <section id="projects" className="py-10">
+    <section id="projets" className="pb-10 pt-10">
       <h1 className="text-secondary text-center mb-8">Mes projets</h1>
 
       {/* Conteneur principal du carousel */}
@@ -119,7 +119,6 @@ function Projet() {
             </a>
           </div>
         </div>
-
 
       </div>
       <hr className="mt-10 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent opacity-75" />

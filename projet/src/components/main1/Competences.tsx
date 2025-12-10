@@ -1,6 +1,6 @@
 function Competences() {
   return (
-    <div>
+    <div id="compétences">
       <section>
         <h1 className="text-secondary text-center pb-10 pt-10">Mes compétences</h1>
 

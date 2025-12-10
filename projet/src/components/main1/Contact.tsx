@@ -35,7 +35,7 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16">
+    <section id="contact">
       <h2 className="text-secondary text-center mb-8">Me contacter</h2>
 
       <form
@@ -94,7 +94,7 @@ function Contact() {
         <button
           type="submit"
           disabled={isSending}
-          className="mt-2 w-full rounded bg-secondary px-4 py-2 text-primary font-semibold hover:bg-secondary/80 disabled:opacity-60 disabled:cursor-not-allowed transition"
+          className="mt-2 w-full rounded bg-secondary px-4 py-2 text-primary font-semibold hover:bg-secondary/80 disabled:opacity-60 disabled:cursor-not-allowed transition cursor-pointer"
         >
           {isSending ? "Envoi en cours..." : "Envoyer"}
         </button>
@@ -111,6 +111,7 @@ function Contact() {
           </p>
         )}
       </form>
+      <hr className="mt-10 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent opacity-75" />
     </section>
   );
 }
