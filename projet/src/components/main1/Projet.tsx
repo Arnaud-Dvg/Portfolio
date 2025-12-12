@@ -1,3 +1,4 @@
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const ArrayProjets = [
@@ -33,98 +34,112 @@ function Projet() {
   };
 
   return (
-    <section id="projets" className="pb-10 pt-10">
-      <h1 className="text-secondary text-center mb-8">Mes projets</h1>
+    <motion.section
+      id="contact"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.5 }}
+    >
+      <section id="projets" className="pb-10 pt-10">
+        <h1 className="text-secondary text-center mb-8">Mes projets</h1>
 
-      {/* Conteneur principal du carousel */}
-      <div className="mx-auto max-w-xl px-4">
+        {/* Conteneur principal du carousel */}
+        <div className="mx-auto max-w-xl px-4">
 
-        {/* Carte du projet affiché */}
-        <div className="bg-[#161621] rounded-xl overflow-hidden shadow-xl">
+          {/* Carte du projet affiché */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentProject.id}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -40 }}
+              transition={{ duration: 0.25 }}
+              className="bg-[#161621] rounded-xl overflow-hidden shadow-lg"
+            >
+              {/* Image du projet */}
+              <img
+                src={currentProject.image}
+                alt={currentProject.nom}
+                className="w-full h-90 object-cover"
+              />
 
-          {/* Image du projet */}
-          <img
-            src={currentProject.image}
-            alt={currentProject.nom}
-            className="w-full h-90 object-cover"
-          />
+
+              {/* Texte + bouton GitHub */}
+              <div className="p-5 flex flex-col gap-3">
+
+                <div className="mt-4 flex items-center justify-between">
 
 
-          {/* Texte + bouton GitHub */}
-          <div className="p-5 flex flex-col gap-3">
+                  {/* Bouton Précédent */}
+                  <button
+                    onClick={handlePrev}
+                    className="text-secondary text-sm border border-secondary px-3 py-1 rounded hover:bg-secondary/10 cursor-pointer"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#f2f2f2" d="M20.834 8.037L9.64 14.5c-1.43.824-1.43 2.175 0 3l11.194 6.463c1.43.826 2.598.15 2.598-1.5V9.537c0-1.65-1.17-2.326-2.598-1.5" /></svg>
+                  </button>
 
-            <div className="mt-4 flex items-center justify-between">
+                  <section>
+                    {/* Titre du projet */}
+                    <h3 className="text-white text-lg font-semibold text-center">
+                      {currentProject.nom}
+                    </h3>
 
-
-              {/* Bouton Précédent */}
-              <button
-                onClick={handlePrev}
-                className="text-secondary text-sm border border-secondary px-3 py-1 rounded hover:bg-secondary/10 cursor-pointer"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#f2f2f2" d="M20.834 8.037L9.64 14.5c-1.43.824-1.43 2.175 0 3l11.194 6.463c1.43.826 2.598.15 2.598-1.5V9.537c0-1.65-1.17-2.326-2.598-1.5" /></svg>
-              </button>
-
-              <section>
-                {/* Titre du projet */}
-                <h3 className="text-white text-lg font-semibold text-center">
-                  {currentProject.nom}
-                </h3>
-
-                {/* Points d'indication */}
-                <div className="flex items-center justify-center gap-2 mt-2">
-                  {ArrayProjets.map((_, index) => (
-                    <span
-                      key={index}
-                      className={`h-3 w-3 rounded-full transition-all duration-300 
+                    {/* Points d'indication */}
+                    <div className="flex items-center justify-center gap-2 mt-2">
+                      {ArrayProjets.map((_, index) => (
+                        <span
+                          key={index}
+                          className={`h-3 w-3 rounded-full transition-all duration-300 
         ${index === currentIndex ? "bg-secondary" : "bg-secondary/40"}
       `}
-                    />
-                  ))}
+                        />
+                      ))}
+                    </div>
+                  </section>
+
+
+                  {/* Bouton Suivant */}
+                  <button
+                    onClick={handleNext}
+                    className="text-secondary text-sm border border-secondary px-3 py-1 rounded hover:bg-secondary/10 cursor-pointer"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#f2f2f2" d="M11.166 23.963L22.36 17.5c1.43-.824 1.43-2.175 0-3L11.165 8.037c-1.43-.826-2.598-.15-2.598 1.5v12.926c0 1.65 1.17 2.326 2.598 1.5z" /></svg>
+                  </button>
+
                 </div>
-              </section>
 
 
-              {/* Bouton Suivant */}
-              <button
-                onClick={handleNext}
-                className="text-secondary text-sm border border-secondary px-3 py-1 rounded hover:bg-secondary/10 cursor-pointer"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#f2f2f2" d="M11.166 23.963L22.36 17.5c1.43-.824 1.43-2.175 0-3L11.165 8.037c-1.43-.826-2.598-.15-2.598 1.5v12.926c0 1.65 1.17 2.326 2.598 1.5z" /></svg>
-              </button>
+                {/* Description */}
+                <p className="text-sm text-gray-200 text-center min-h-[180px] lg:min-h-[100px]">
+                  {currentProject.description}
+                </p>
 
-            </div>
-
-
-            {/* Description */}
-            <p className="text-sm text-gray-200 text-center min-h-[180px] lg:min-h-[100px]">
-              {currentProject.description}
-            </p>
-
-            {/* Lien GitHub du projet + lien du site*/}
-            <a
-              href={currentProject.site}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-block text-center text-sm text-secondary underline"
-            >
-              Voir le site
-            </a>
-            <a
-              href={currentProject.lien}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-block text-center text-sm text-secondary underline"
-            >
-              Voir sur GitHub
-            </a>
-          </div>
+                {/* Lien GitHub du projet + lien du site*/}
+                <a
+                  href={currentProject.site}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block text-center text-sm text-secondary underline"
+                >
+                  Voir le site
+                </a>
+                <a
+                  href={currentProject.lien}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block text-center text-sm text-secondary underline"
+                >
+                  Voir sur GitHub
+                </a>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
-
-      </div>
-      <hr className="mt-10 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent opacity-75" />
-    </section >
+        <hr className="mt-10 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary to-transparent opacity-75" />
+      </section >
+    </motion.section>
   );
-
 }
 
 export default Projet;

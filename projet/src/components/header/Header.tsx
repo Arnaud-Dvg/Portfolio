@@ -1,10 +1,7 @@
 import { useState } from "react";
 
-
-
 function Header() {
   const [open, setOpen] = useState(false);
-
   const toggleMenu = () => setOpen((prev) => !prev);
 
   return (
@@ -36,24 +33,24 @@ function Header() {
           Télécharger mon CV
         </a>
         </li>
-
       </ul>
       {/* Modale du menu */}
       <div className="flex items-center gap-4 md:hidden">
         {open && (
           <div className="md:hidden">
-            <ul className="text-secondary flex flex-col py-3">
+            <ul className="text-secondary text-sm flex flex-col py-3">
               <li><a href="#description" onClick={() => setOpen(false)}>Description</a></li>
               <li><a href="#compétences" onClick={() => setOpen(false)}>Compétences</a></li>
               <li><a href="#projets" onClick={() => setOpen(false)}>Projets</a></li>
               <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
-              <li><a
-                href="/CV ARNAUD 2025.pdf"
-                download
-                className="px-2 py-1 bg-secondary text-white rounded hover:bg-secondary/80 transition"
-              >
-                Télécharger mon CV
-              </a>
+              <li>
+                <a
+                  href="/CV ARNAUD 2025.pdf"
+                  download
+                  className="hover:saturate-150 px-2 bg-secondary text-white rounded hover:bg-secondary/80 transition"
+                >
+                  Télécharger mon CV
+                </a>
 
               </li>
 
@@ -62,7 +59,7 @@ function Header() {
         )}
         {/* Bouton Burger */}
         <button
-          className="md:hidden pr-5"
+          className="md:hidden pr-5 hover:scale-120 cursor-pointer"
           onClick={toggleMenu}
         >
           <div className="block h-0.5 w-6 bg-secondary mb-1"></div>
@@ -72,7 +69,6 @@ function Header() {
         </button>
       </div>
     </section>
-
   );
 }
 
