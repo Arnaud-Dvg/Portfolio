@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import RotatingCube from "./RotatingCube";
 
 function Description() {
   return (
