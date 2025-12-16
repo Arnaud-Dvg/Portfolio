@@ -7,7 +7,7 @@ const cubesMobile = [
     { id: 3, className: "top-215 left-4", delay: 1 },
     { id: 4, className: "top-335 right-4", delay: .05 },
     { id: 5, className: "top-573 left-10", delay: 1 },
-    { id: 6, className: "top-707 right-4", delay: 1 },
+    { id: 6, className: "top-670 right-4", delay: 1 },
 ];
 
 // Version Tablette MD

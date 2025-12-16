@@ -51,9 +51,7 @@ function Header() {
                 >
                   Télécharger mon CV
                 </a>
-
               </li>
-
             </ul>
           </div>
         )}
@@ -65,7 +63,6 @@ function Header() {
           <div className="block h-0.5 w-6 bg-secondary mb-1"></div>
           <div className="block h-0.5 w-6 bg-secondary mb-1"></div>
           <div className="block h-0.5 w-6 bg-secondary"></div>
-
         </button>
       </div>
     </section>

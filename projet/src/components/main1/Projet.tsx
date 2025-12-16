@@ -16,7 +16,6 @@ function Projet() {
 
   const currentProject = ArrayProjets[currentIndex];
 
-
   // Fonction pour aller au projet suivant
   const handleNext = () => {
     setCurrentIndex((prev) =>
@@ -64,12 +63,10 @@ function Projet() {
                 className="w-full h-90 object-cover"
               />
 
-
               {/* Texte + bouton GitHub */}
               <div className="p-5 flex flex-col gap-3">
 
                 <div className="mt-4 flex items-center justify-between">
-
 
                   {/* Bouton Précédent */}
                   <button
@@ -98,7 +95,6 @@ function Projet() {
                     </div>
                   </section>
 
-
                   {/* Bouton Suivant */}
                   <button
                     onClick={handleNext}
@@ -108,7 +104,6 @@ function Projet() {
                   </button>
 
                 </div>
-
 
                 {/* Description */}
                 <p className="text-sm text-gray-200 text-center min-h-[180px] lg:min-h-[100px]">

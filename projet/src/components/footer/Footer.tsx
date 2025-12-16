@@ -10,7 +10,6 @@ function Footer() {
         <a href="https://github.com/Arnaud-Dvg"><img src="./assets/github.png" alt="GitHub" className="hover:scale-120" /></a>
       </div>
     </section>
-
   );
 }
 
