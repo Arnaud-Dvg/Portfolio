@@ -34,7 +34,7 @@ function Projet() {
 
   return (
     <motion.section
-      id="contact"
+      id="Projet"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}

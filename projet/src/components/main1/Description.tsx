@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 function Description() {
   return (
     <motion.section
-      id="contact"
+      id="description"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
     >
-      <div id="description" className="relative [&_p]:text-white [&_p]:text-center [&_p]:mx-auto [&_p]:w-2/3">
-        <h1 className="text-secondary text-center pb-5">Développeur Web Full-Stack
+      <div className="relative [&_p]:text-white [&_p]:text-center [&_p]:mx-auto [&_p]:w-2/3">
+        <h1 className="text-secondary text-center pb-5 pt-10">Développeur Web Full-Stack
         </h1>
         <img src="./assets/moi.png" alt="Photo de Arnaud Devoge" className="rounded-full h-[100px] mx-auto shadow-[0_0_10px_1px] shadow-[#5ce1e6] hover:scale-105" />
         {/* Version Desktop */}

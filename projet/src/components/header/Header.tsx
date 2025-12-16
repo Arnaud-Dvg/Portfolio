@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <section
-      className="flex items-center bg-primary justify-between"
+      className="sticky top-0 z-50 flex items-center bg-primary justify-between"
     >
       <div className="flex items-center gap-2">
         <img

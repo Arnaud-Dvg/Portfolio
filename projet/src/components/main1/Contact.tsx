@@ -43,9 +43,8 @@ function Contact() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
     >
-      <section id="contact">
+      <section>
         <h2 className="text-secondary text-center mb-8">Me contacter</h2>
-
         <form
           ref={formRef}
           onSubmit={handleSubmit}
